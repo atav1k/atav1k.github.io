@@ -1,0 +1,27 @@
+:root {
+  --headings-font-family: 'Kavivanar';
+  --font-system: 'Inter UI', sans-serif;
+  --headings-line-height: 1.25;
+  --color-space: #202028;
+  --color-alabaster: #F0F0E8;
+  --color-major: #603CE8;
+  --color-vista: #C0A0F0;
+  --color-glitter: #FAFAFA;
+  --color-glitter-2: #E8e8e8;
+  --body-bg-color: var(--color-glitter);
+  --body-color: var(--color-space);
+  --link-color: var(--color-major);
+  --container-max-width-xl: 1280px;
+  --mark-bg-color: var(--color-vista);
+}
+
+body {
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero {
+  background: var(--color-space);
+  color: var(--color-glitter-2)
+}

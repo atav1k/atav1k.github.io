@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<title>Vikram—விக்ரம்</title>
+<meta name="description" content="A portfolio">
+
+<!-- 3rd party libraries -->
+<!--  -->
+<style>
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+@import url('https://rsms.me/inter/inter-ui.css');
+</style>
+<link href="/assets/vendor/shoelace/dist/shoelace.css" media="all" rel="stylesheet">
+<link href="/assets/vendor/dirg/dirg.min.css" media="all" rel="stylesheet" />
+<link href="/assets//app.css" media="all" rel="stylesheet" />
+
+    </head>
+    <body>
+        <header class="container">
+  <nav class="row mar-t-sm mar-b-sm">
+    <div class="col">
+      <a href="/"><h2>Vikram—விக்ரம்</h2></a>
+    </div>
+  </nav>
+</header>
+
+        <h1>DIRG</h1><p>DIRG is a pure CSS ultra-light Grid Framework</p>
+<p>Demo : <a href="https://codepen.io/raphaelgoetter/pen/XzdeRe?editors=1100">https://codepen.io/raphaelgoetter/pen/XzdeRe?editors=1100</a></p>
+<h1>Install</h1><p><del>nodeJS</del> <del>jQuery</del> <del>JavaScript</del> <del>Sass</del></p>
+<p>Just use <code>dirg.min.css</code> (362 Bytes)</p>
+<h1>Howto?</h1><p>Add a <code>.DIRG</code> class on a parent to create a new grid.</p>
+<p>Then, use the <code>style=</code> HTML attribute just to change the variables values either on parent or some children.</p>
+<p>Example :</p>
+<pre><code>&lt;div class=&quot;DIRG&quot; style=&quot;--grid-number: 3; --grid-gutter: 1rem;&quot;&gt;
+</code></pre><p>will design a 3 columns grid with a 1rem gutter between children.</p>
+<h1>Variables</h1><ul>
+<li><code>--grid-number</code>: number of columns inside the grid. (apply on parent) (default value: <code>auto</code>)</li>
+<li><code>--grid-gutter</code> gutter size between children. (apply on parent) (default value: <code>0</code>)</li>
+<li><code>--grid-col</code> column spanning (apply on child). (default value: <code>1</code>)</li>
+<li><code>--grid-row</code> row spanning (apply on child). (default value: <code>1</code>)</li>
+<li><code>--grid-order</code> affects visual order of element (apply on child). (default value: <code>0</code>, change to <code>-1</code> to appear first, or <code>1</code> to appear last)</li>
+</ul>
+<h1>FAQ</h1><h2>But inline <code>style=</code> is bad!</h2><p>Nah. Inline <em>styles</em> are bad, right. Here, you just change the value of a variable. No real properties will be hurt.</p>
+<h2>Compatibility</h2><ul>
+<li>Grid Layout : Edge 16 <a href="https://caniuse.com/#feat=css-grid">https://caniuse.com/#feat=css-grid</a></li>
+<li>CSS custom properties (variables) : Edge 16 <a href="https://caniuse.com/#feat=css-variables">https://caniuse.com/#feat=css-variables</a></li>
+</ul>
+<h2>Licence</h2><p>WTFPL <a href="http://www.wtfpl.net/">http://www.wtfpl.net/</a></p>
+<h1>Full Example</h1><pre><code>&lt;div class=&quot;DIRG&quot; style=&quot;--grid-number: 3; --grid-gutter: 1rem;&quot;&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+  &lt;div style=&quot;--grid-col: 2;&quot;&gt;3&lt;/div&gt;
+  &lt;div&gt;4&lt;/div&gt;
+  &lt;div style=&quot;--grid-row: 2;&quot;&gt;5&lt;/div&gt;
+  &lt;div&gt;6&lt;/div&gt;
+  &lt;div&gt;7&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><img src="https://raw.githubusercontent.com/raphaelgoetter/dirg/master/dirg.png" alt="result"></p>
+        <footer class="container mar-t-lg mar-b-lg">
+  <div class="row">
+    <div class="col text-center">
+      <h4><a href="https://dribbble.com/atav1k">Dribbble</h4>
+    </div>
+    <div class="col text-center">
+      <h4><a href="https://medium.com/@atav1k/">Medium</h4>
+    </div>
+    <div class="col text-center">
+      <h4><a href="https://github.com/atav1k">Github</h4>
+    </div>
+    <div class="col text-center">
+      <h4><a href="https://www.linkedin.com/in/atav1k/">Twitter</h4>
+    </div>
+  </div>
+</footer>
+
+        
+<!-- 3rd party libraries -->
+<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+
+<!-- -->
+<script src="/assets//app.js"></script>
+<script src="https://cdn.shoelace.style/1.0.0-beta24/shoelace.js"></script>
+
+    </body>
+</html>
